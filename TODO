@@ -1,8 +1,6 @@
-1) Fix isotope layout and etc
-3) Fix Contact Us page
-4) Remove unsecure
-5) Configure Roles for blog.
-6) Fix structure of project.
+1) Fix ui of admin login
+2) Remove unsecure
+3) Determine why img does not load when navigating abruptly from blog to portfolio
 
 Deploy with
 

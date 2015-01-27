@@ -8,5 +8,3 @@ if (Meteor.isClient) {
     }
   })
 }
-
- $('#contact-form').validate();

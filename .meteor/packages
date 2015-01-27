@@ -8,7 +8,6 @@ meteor-platform
 autopublish
 insecure
 twbs:bootstrap
-ian:accounts-ui-bootstrap-3
 accounts-password
 ryw:blog
 alanning:roles
@@ -19,3 +18,5 @@ jquery
 multiply:iron-router-progress
 aldeed:autoform
 aldeed:collection2
+ian:accounts-ui-bootstrap-3
+mrt:accounts-admin-ui-bootstrap-3

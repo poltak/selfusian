@@ -1,0 +1,15 @@
+<template name="adminTemplate">
+	<div class="row">
+		<div class="col-md-5"></div>
+		<div class="col-md-2">
+			{{> loginButtons}}
+			{{#if isAdminUser}}
+			{{> accountsAdmin}}
+			{{else}}
+			Must be admin to see this...
+			{{/if}}
+		</div>
+		<div class="col-md-5"></div>
+
+	</div>
+</template>
