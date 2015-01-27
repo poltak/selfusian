@@ -1,0 +1,125 @@
+<!-- Template does not seem to work when placed in public folder -->
+<template name="home">
+    <br/>
+
+    <div>
+        <!-- <img src="img/bg-main1.jpg" alt="" class="img-responsive" /> -->
+        <div class="slider row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <!-- http://stackoverflow.com/questions/14268840/using-iframes-with-meteor.
+                Using constant seems to cause the iron router to fail. Probably an issue. -->
+                <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/pIZ5ie47jvk"></iframe>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+
+        </div>
+        <!-- column content -->
+        <div id="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="big-box">
+                        <div class="col-lg-12">
+                            <div class="col-md-4">
+                                <div class="box-bg">
+                                    <div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.9s">
+                                        <div class="align-center">
+                                            <i class="fa fa-camera-retro fa-5x"></i>
+                                            <h4 class="text-bold">Customizable</h4>
+
+                                            <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis
+                                                patrioque comprehensam nam no.
+                                                Mei cu dicat voluptaria volumus.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box-bg">
+                                    <div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.6s">
+                                        <div class="align-center">
+                                            <i class="fa fa-shield fa-5x"></i>
+                                            <h4 class="text-bold">Valid HTML5</h4>
+
+                                            <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis
+                                                patrioque comprehensam nam no.
+                                                Mei cu dicat voluptaria volumus.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box-bg">
+                                    <div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
+                                        <div class="align-center">
+                                            <i class="fa fa-circle fa-5x"></i>
+                                            <h4 class="text-bold">Responsive</h4>
+
+                                            <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis
+                                                patrioque comprehensam nam no.
+                                                Mei cu dicat voluptaria volumus.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="wow bounceInRight">
+                        <div class="col-lg-6">
+                            <h4>Maecenas luctus</h4>
+
+                            <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam
+                                nam no.
+                                Mei cu dicat voluptaria volumus.</p>
+                            <a href="#" class="thumbnail">
+                                <img src="img/thumbnails/outline-1.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="wow bounceInLeft">
+                        <div class="col-lg-6">
+                            <h4>Maecenas luctus</h4>
+
+                            <p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam
+                                nam no.
+                                Mei cu dicat voluptaria volumus.</p>
+                            <a href="#" class="thumbnail">
+                                <img src="img/thumbnails/ipad.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end column content -->
+    </div>
+</template>
+
+<template name="ApplicationLayout">
+    {{> navbar}}
+    {{> yield}}
+    {{> footer}}
+</template>
+
+
+<head>
+    <title>Fusecam - A photo sharing application for couples and friends.</title>
+</head>
+
+
+<template name="admin">
+    {{> loginButtons}}
+    {{> blogIndex}}
+</template>
+
+
+
