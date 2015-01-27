@@ -18,8 +18,3 @@ Router.route('/admin', function () {
 Router.configure({
   layoutTemplate: 'ApplicationLayout'
 });
-
-
-Accounts.config({
-  forbidClientAccountCreation : true
-});
