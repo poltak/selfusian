@@ -3,13 +3,19 @@
 		<div class="col-md-5"></div>
 		<div class="col-md-2">
 			{{> loginButtons}}
+		</div>
+		<div class="col-md-5"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
 			{{#if isAdminUser}}
 			{{> accountsAdmin}}
 			{{else}}
 			Must be admin to see this...
 			{{/if}}
 		</div>
-		<div class="col-md-5"></div>
-
+		<div class="col-md-3"></div>
 	</div>
 </template>

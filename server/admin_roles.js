@@ -1,16 +1,23 @@
 if (Meteor.isServer) {
     Meteor.startup(function () {
-        // bootstrap the admin user if they exist -- You'll be replacing the id later
-        if (Meteor.users.findOne("k3ALWQpCqEeaEkpno")){
-            Roles.addUsersToRoles("k3ALWQpCqEeaEkpno", ['admin']);
-            Roles.addUsersToRoles("k3ALWQpCqEeaEkpno", ['blogAdmin']);
+        if ( Meteor.users.find().count() === 0 ) {
+             var users = [
+             {name:"admin",email:"iamapotato@gmail.com",roles:['admin','blogAdmin']},
+             ];
+
+             _.each(users, function (user) {
+                var id;
+
+                id = Accounts.createUser({
+                  email: user.email,
+                  password: "admin",
+                  profile: { name: user.name }
+                });
+
+                if (user.roles.length > 0) {
+                    Roles.addUsersToRoles(id, user.roles);
+                }
+            });
         }
-
-        // create a couple of roles if they don't already exist (THESE ARE NOT NEEDED -- just for the demo)
-        if(!Meteor.roles.findOne({name: "secret"}))
-            Roles.createRole("secret");
-
-        if(!Meteor.roles.findOne({name: "double-secret"}))
-            Roles.createRole("double-secret");
     });
 }

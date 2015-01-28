@@ -1,7 +1,10 @@
-1) Fix ui of admin login
+
 2) Remove unsecure
 3) Determine why img does not load when navigating abruptly from blog to portfolio
 
 Deploy with
 
 meteor deploy jian.meteor.com --settings settings.json
+
+Admin page at /admin and /admin/blog
+With iamapotato@gmail.com  admin
